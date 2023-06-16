@@ -1,0 +1,18 @@
+.status{
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 5px;
+
+    &.danger{
+        background-color: #ffe2e5;
+        color: #f65465; 
+    }
+    &.success {
+        background-color: #c9f7f5;
+        color: #22c7bf;
+    }
+    &.warning {
+        background-color: #fff4de;
+        color: #ffb018;
+    }
+}

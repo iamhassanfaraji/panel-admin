@@ -1,0 +1,46 @@
+@use "src/global/_base";
+$height-header:65px;
+.header-container{
+  height:$height-header;
+}
+header{
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 10px 10px 0 rgb(82 63 105 / 8%);
+  background-color: white;
+  display: flex;
+  align-items: center;
+  height: $height-header;
+  div{
+    transition: all 0.3s;
+    background-color: transparent;
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover{
+      background-color: base.$bg-active-item;
+    }
+    span:nth-of-type(1){
+      background-image: url("../../assets/images/users/person.jpg");
+      background-repeat: no-repeat;
+      background-size:cover;
+      width: 35px;
+      height: 35px;
+      margin-left: 10px;
+      border-radius: 5px;
+    }
+  }
+}
+
+#root{
+  background-color: base.$bg-main-color;
+}
+
+main{
+  width: 100%;
+  padding-top: 25px;
+}

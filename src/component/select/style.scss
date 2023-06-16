@@ -1,0 +1,43 @@
+.select {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    margin-left: 25px;
+    height: 28.1px;
+
+    .selected {
+        border: 1px solid #eeeff5;
+        border-radius: 5px;
+        width: 100%;
+        display: inline-block;
+        padding: 5px;
+    }
+
+    &>span {
+        position: relative;
+        width: 100%;
+        white-space: nowrap;
+        margin-left: 10px;
+    }
+
+    p {
+        box-sizing: border-box;
+        white-space: nowrap;
+    }
+
+    ul {
+        height: 0;
+        width: 100%;
+        position: absolute;
+        overflow: hidden;
+        transition: height 0.5s;
+        background-color: white;
+        box-shadow: 0px 0px 50px 0px rgb(82 63 105 / 15%);
+        border-radius: 5px;
+        margin-top: 10px;
+
+        li {
+            padding: 5px;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.addUser{
+    background-color: #fff;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    
+    .item{
+        width: calc(25% - 0.25rem);
+        background-color: #F3F6F9;
+        &.active{
+            background-color: #fff;
+        }
+    }
+} 

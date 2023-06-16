@@ -1,0 +1,24 @@
+@mixin baseButton($bg-color:null,$color:null){
+  background-color: $bg-color;
+  color: $color;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  transition-delay: 0.05s;
+}
+
+.primary{
+  @include baseButton($bg-color:#e1f0ff,$color:#3699FF);
+  &:hover , &.active{
+    background-color: #3699FF;
+    color: white;
+  }
+}
+
+.secondary{
+  @include baseButton($bg-color:#3699FF,$color:white);
+}
+
+.danger{
+  @include baseButton($bg-color:#f1416c,$color:white);
+}

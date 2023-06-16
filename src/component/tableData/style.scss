@@ -1,0 +1,170 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+
+  thead {
+    td {
+      border: unset;
+      color: #B5B5C3;
+      font-size: 10px;
+    }
+  }
+
+  td {
+    padding: 15px;
+    border-top: 1px solid #eeeff5;
+    text-align: center;
+    color: #3F4254;
+    font-size: 13px;
+    cursor: default;
+  }
+}
+
+.dataBase {
+  position: relative;
+  padding: 0 30px;
+  margin: 0 auto;
+  border-radius: 5px;
+  color: #3F4254;
+  margin: 20px 0;
+
+  .table-container {
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0px 0px 30px 0px rgb(82 63 105 / 5%);
+    padding: 20px;
+    border-radius: 3px;
+  }
+
+  .header {
+    display: flex;
+    margin: 30px 0;
+  }
+
+  .searching {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-left: 10px;
+
+    input {
+      font-size: 12px;
+      padding: 5px;
+      border: solid 1px #eeeff5;
+      border-radius: 5px;
+      margin-left: 50px;
+    }
+  }
+
+  
+}
+
+.selector {
+  width: 12px;
+  height: 12px;
+  background-color: #EBEDF3;
+  display: inline-block;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+#editOption {
+  span {
+    margin-right: 5px;
+
+    &:hover path {
+      fill: #3699FF;
+    }
+  }
+
+  svg {
+    cursor: pointer;
+    width: 20px;
+  }
+
+  path {
+    fill: #B5B5C3;
+  }
+}
+
+.editor {
+  display: flex;
+  justify-content: center;
+
+  .item {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .btns-editor {
+    display: flex;
+    justify-content: center;
+
+    button {
+      margin-right: 10px;
+    }
+  }
+}
+
+.editor-container {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0px 0px 30px 0px rgb(82 63 105 / 5%);
+  padding: 20px;
+  border-radius: 5px;
+
+  label {
+    display: inline-block;
+    margin-bottom: 7px;
+  }
+}
+
+.setting {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  .nav {
+    width: 57px;
+    background-color: #ebedf3;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+
+  .bullet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: all 0.5s;
+    margin: 0 5px;
+
+    &.active {
+      margin-left: calc(100% - 29px); // 29px = 24px(width element) + 5px(margin)
+      background-color: #3699FF;
+    }
+
+    img {
+      width: 15px;
+    }
+  }
+}
+
+.delete {
+  margin-bottom: 10px;
+}
+
+
+
+//************** style components  ******************//
